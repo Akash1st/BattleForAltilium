@@ -4,14 +4,10 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-/**
- *It's used for other whose can move, attack and get damage
- */
-public class Warrior extends MapObject {
+public class Orc extends MapObject {
 
-    /**Assigned field*/
-    public Warrior() {
-        pathTitle.append("second_human.png");
+    public Orc() {
+        pathTitle.append("second_orc.png");
         try {
             tile = ImageIO.read(new File(pathTitle.toString()));
         } catch (IOException e) {
