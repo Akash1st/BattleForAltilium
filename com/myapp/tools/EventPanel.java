@@ -1,14 +1,10 @@
 package com.myapp.tools;
 
 public class EventPanel {
-    private int x;
-    private int y;
-    private int width;
-    private int height;
 
     private String[] eventGame;
 
-    EventPanel() {
+    public EventPanel() {
         eventGame = new String[10];
         for (int i = 0; i < eventGame.length; i++) {
             eventGame[i] = "";
@@ -33,5 +29,21 @@ public class EventPanel {
                 }
             }
         }
+    }
+
+    public final int getX() {
+        return 0;
+    }
+
+    public final int getY() {
+        return 550;
+    }
+
+    public final int getWidth() {
+        return 900;
+    }
+
+    public final int getHeight() {
+        return 116;
     }
 }
